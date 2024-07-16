@@ -7,7 +7,22 @@
     <link href="../assets/output.css" rel="stylesheet">
     <style>
         .color-back {
-            background-color: #243636;
+            color: #f3cb83;
+            background-color: #1b4555;
+        }
+
+        .border {
+            border-color: #f3cb83;
+            border-width: 2px;
+            background-color: #1b4555;
+        }
+
+        .couleur-secondaire {
+            background-color: #4b8c90;
+        }
+
+        a:hover {
+            background-color: #4b8c90;
         }
 
         .card {
@@ -28,10 +43,10 @@
     </style>
 </head>
 <body class="color-back">
-    <div class="container mx-auto p-5 text-[#634141] font-baskerville ">
+    <div class="container mx-auto p-5 font-baskerville ">
 
         <!-- bandeau haut de page -->  
-            <div class="shadow-md bg-[#D6FFFF] rounded-md">
+            <div class="shadow-md couleur-secondaire rounded-md">
                 <!-- bandeau haut de page -->
                     <div class="header  text-center py-4 rounded-md">
                         <h1 class="text-3xl font-bold">Mon Blog - Acfri</h1>    
@@ -39,17 +54,17 @@
                 <!-- fin bandeau haut de page -->
             
                 <!-- bandeau avec bouton de redirection -->
-                    <div class="menu bg-[#D6FFFF] rounded-md">
+                    <div class="menu couleur-secondaire rounded-md">
                         <ul class="flex justify-center ">
                             </li>
                             <li class="m-4">
-                                <a href="../index.html" class="px-3 py-1 text-lg border-2 border-[#419e87] rounded-md hover:bg-[#419e87]">Acceuil</a>
+                                <a href="../index.html" class="px-3 py-1 text-lg border rounded-md ">Acceuil</a>
                             </li>
                             <li class="m-4">
-                                <a href="about.html" class="px-3 py-1 text-lg border-2 border-[#419e87] rounded-md hover:bg-[#419e87]">À propos</a>
+                                <a href="about.html" class="px-3 py-1 text-lg border rounded-md ">À propos</a>
                             </li>
                             <li class="m-4">
-                                <a href="Exp.html" class="px-3 py-1 text-lg border-2 border-[#419e87] rounded-md hover:bg-[#419e87]">Expérience</a>
+                                <a href="Exp.html" class="px-3 py-1 text-lg border rounded-md ">Expérience</a>
                             </li>
                         </ul>
                     </div>
@@ -58,36 +73,39 @@
         <!-- fin bandeau haut de page -->
 
         <!-- contenu de page -->
-        <div class="grid grid-cols-3 grid-rows-1 gap-3 mt-10">
+        <div class="grid grid-cols-3 grid-rows-1 gap-3 mt-10 ">
 
             <!-- articles -->
-            <div class="bg-white rounded-md shadow-lg p-5 card ">
-                <h3 class="text-xl font-bold mb-3">Infrastructure</h3>
+            <div class="couleur-secondaire rounded-md shadow-lg p-5 card ">
+                <h3 class="text-3xl font-bold mb-3 text-center underline">Infrastructure</h3>
+                <div class="flex justify-center">
+                    <img src="../static/img/infra.png" class="w-2/3" >
+                </div> 
                 <div class="card-content">
-                    <p class=" mb-3 text-lg">Pendant mon stage chez acfri j'ai pu découvrir l'infrastructure réseau de l'entreprise.</p>
+                    <p class="mt-4 mb-2 text-lg text-center">Pendant mon stage chez acfri j'ai pu découvrir l'infrastructure réseau de l'entreprise.</p>
                 </div>
                 <div class="flex justify-end">
-                    <a href="acfri.html" class="px-3 py-1 text-lg rounded-md hover:bg-[#419e87] border-2 border-[#419e87]">Découvrir</a>
+                    <a href="acfri.html" class="px-3 py-1 text-lg rounded-md border mt-4">Découvrir</a>
                 </div>
             </div>
  
-            <div class="bg-white rounded-md shadow-lg p-5 card ">
+            <div class="couleur-secondaire rounded-md shadow-lg p-5 card ">
                 <h3 class="text-xl font-bold mb-3">Acfri</h3>
                 <div class="card-content">
                     <p class=" text-lg mb-3">Entreprise de vente et de fabrication de machine de réfrigération rapide</p>
                 </div>
                 <div class="flex justify-end">
-                    <a href="acfri.html" class="px-3 py-1 text-lg rounded-md hover:bg-[#419e87] border-2 border-[#419e87]">Découvrir</a>
+                    <a href="acfri.html" class="px-3 py-1 text-lg rounded-md border ">Découvrir</a>
                 </div>
             </div>
 
-            <div class="bg-white rounded-md shadow-lg p-5 card ">
+            <div class="couleur-secondaire rounded-md shadow-lg p-5 card ">
                 <h3 class="text-xl font-bold mb-3">Acfri</h3>
                 <div class="card-content">
-                    <p class="text-lg mb-3">Entreprise de vente et de fabrication de machine de réfrigération rapide</p>
+                    <p class="text-lg mb-5">Entreprise de vente et de fabrication de machine de réfrigération rapide</p>
                 </div>
                 <div class="flex justify-end">
-                    <a href="acfri.html" class="px-3 py-1 text-lg rounded-md hover:bg-[#419e87] border-2 border-[#419e87]">Découvrir</a>
+                    <a href="acfri.html" class="px-3 py-1 text-lg rounded-md border">Découvrir</a>
                 </div>
             </div>
         </div>

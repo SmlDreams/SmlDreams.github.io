@@ -7,15 +7,33 @@
     <link href="../assets/output.css" rel="stylesheet">
     <style>
         .color-back {
-            background-color: #243636;
+            color: #f3cb83;
+            background-color: #1b4555;
         }
+
+        .clt {
+            color: #1b4555;
+        }
+        .border {
+            border-color: #f3cb83;
+            border-width: 2px;
+        }
+
+        .couleur-secondaire {
+            background-color: #4b8c90;
+        }
+
+        a:hover {
+            background-color: #1b4555;
+        }
+
     </style>
 </head>
 <body class="color-back">
-    <div class="container mx-auto p-5 text-[#634141] font-baskerville ">
+    <div class="container mx-auto p-5  font-baskerville ">
 
         <!-- bandeau haut de page -->
-        <div class="shadow-md bg-[#D6FFFF] rounded-md">
+        <div class="shadow-md couleur-secondaire rounded-md">
             <!-- bandeau haut de page -->
             <div class="header text-center py-4 rounded-md">
                 <h1 class="text-3xl font-bold">Mon Blog - À propos</h1>    
@@ -23,14 +41,14 @@
             <!-- fin bandeau haut de page -->
          
             <!-- bandeau avec bouton de redirection -->
-            <div class="menu bg-[#D6FFFF] rounded-md">
+            <div class="menu couleur-secondaire rounded-md">
                 <ul class="flex justify-center ">
                     </li>
                     <li class="m-4">
-                        <a href="../index.html" class="px-3 py-1 text-lg border-2 border-[#419e87] rounded-md hover:bg-[#419e87]">Acceuil</a>
+                        <a href="../index.html" class="px-3 py-1 text-lg border rounded-md ">Acceuil</a>
                     </li>
                     <li class="m-4">
-                        <a href="Exp.html" class="px-3 py-1 text-lg border-2 border-[#419e87] rounded-md hover:bg-[#419e87]">Expérience</a>
+                        <a href="Exp.html" class="px-3 py-1 text-lg border rounded-md ">Expérience</a>
                     </li>
                 </ul>
             </div>
@@ -41,16 +59,16 @@
         <!-- contenu de page -->
 
         
-        <div class="grid justify-items-center">
+        <div class="grid justify-items-center ">
             <!-- introduction de page -->
-                <div class="content bg-white p-5 mt-5 shadow-md rounded-md w-2/3">
+                <div class="content couleur-secondaire bg-white p-5 mt-5 shadow-md rounded-md w-2/3">
                     <h2 class="text-2xl font-bold text-center">Bienvenue sur la page Profil</h2>
                     <p class="leading-relaxed text-lg text-center">Ici vous pourrez retrouver mon CV et toutes les informations me concernant. </p>
                 </div>
             <!-- fin introduction de page -->
 
             <!-- CV -->
-                    <div class="content bg-white p-5 mt-5 shadow-md rounded-md w-2/3">
+                    <div class="content couleur-secondaire bg-white p-5 mt-5 shadow-md rounded-md w-2/3">
                         <p class="leading-relaxed text-2xl underline text-center font-bold">Curiculum Vitae</p>
                         <div class="flex justify-center mt-10">
                             <img src="../static/img/cv.png" class="w-2/3">
@@ -60,8 +78,8 @@
 
 
             <!-- à propos et parcour -->
-                <div class="content bg-white p-5 mt-5 shadow-md rounded-md w-2/3"> 
-                <div class="content bg-white p-5 mt-5 shadow-md">
+                <div class="content  couleur-secondaire p-5 mt-5 shadow-md rounded-md w-2/3"> 
+                <div class="content color-back rounded-md p-5 mt-5 shadow-md">
                     <p class="leading-relaxed text-2xl underline text-center font-bold">Présentation</p>
                     <p class="leading-relaxed text-xl text-center mx-48 pt-10">
                         Étudiant à Ynov Campus, je suis spécialisé en administration système et réseau.</p>
@@ -70,7 +88,7 @@
                     <p class="leading-relaxed text-xl text-center mx-48 ">     
                         En dehors de mes études, je pratique le volleyball en compétition, je suis friant de challenge tant professionelle que sportif.</p>
                 </div>
-                <div class="content bg-white p-5 mt-5 shadow-md rounded-md">
+                <div class="content color-back p-5 mt-5 shadow-md rounded-md">
                     <p class="leading-relaxed text-2xl underline text-center font-bold">Parcours</p>
                     <p class="leading-relaxed text-xl text-center mx-48 py-10">
                         j'ai commencé à me passionner pour les jeux vidéo à l'adolescence, ce qui m'a rapidement permis de comprendre que je voulais faire carrière dans l'informatique.
@@ -81,7 +99,7 @@
             <!-- fin à propos et parcour  -->
         
             <!-- mes liens -->
-                <div class="content bg-white p-5 mt-5 shadow-md rounded-md w-2/3">
+                <div class="content  couleur-secondaire p-5 mt-5 shadow-md rounded-md w-2/3">
                     <p class="leading-relaxed text-2xl underline text-center font-bold">Mes liens</p>
                     <div class="flex justify-center mt-10">
                         <img src="../static/img/icon-linkdin.png" class="size-7 mx-2"> 
@@ -95,7 +113,7 @@
             <!-- fin mes liens -->
 
             <!-- mes coordonnées  -->
-                <div class="content bg-white p-5 mt-5 shadow-md rounded-md w-2/3">
+                <div class="content  couleur-secondaire p-5 mt-5 shadow-md rounded-md w-2/3">
                     <p class="leading-relaxed text-2xl underline text-center font-bold">Mes Coordonnées </p>
                     <div class="flex justify-center mt-10">
                         <img src="../static/img/mail.png" class="size-7 mx-2"> 
