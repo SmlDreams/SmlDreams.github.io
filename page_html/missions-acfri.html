@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../assets/output.css" rel="stylesheet">
+    <style>
+        .color-back {
+            color: #f3cb83;
+            background-color: #1b4555;
+        }
+
+        .border {
+            border-color: #f3cb83;
+            border-width: 2px;
+            background-color: #1b4555;
+        }
+
+        .couleur-secondaire {
+            background-color: #4b8c90;
+        }
+
+        a:hover {
+            background-color: #4b8c90;
+        }
+
+        .card {
+            transition: transform 0.3s, max-height 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            max-height: 500px; /* Ajustez cette valeur selon la quantité de contenu */
+        }
+        .card-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s;
+        }
+        .card:hover .card-content {
+            max-height: 200px; /* Ajustez cette valeur selon la quantité de contenu */
+        }
+    </style>
+</head>
+<body class="color-back">
+    <div class="container mx-auto p-5 font-baskerville ">
+
+        <!-- bandeau haut de page -->  
+            <div class="shadow-md couleur-secondaire rounded-md">
+                <!-- bandeau haut de page -->
+                    <div class="header  text-center py-4 rounded-md">
+                        <h1 class="text-3xl font-bold">Mon Blog - Acfri</h1>    
+                    </div>
+                <!-- fin bandeau haut de page -->
+            
+                <!-- bandeau avec bouton de redirection -->
+                    <div class="menu couleur-secondaire rounded-md">
+                        <ul class="flex justify-center ">
+                            </li>
+                            <li class="m-4">
+                                <a href="../index.html" class="px-3 py-1 text-lg border rounded-md ">Acceuil</a>
+                            </li>
+                            <li class="m-4">
+                                <a href="about.html" class="px-3 py-1 text-lg border rounded-md ">À propos</a>
+                            </li>
+                            <li class="m-4">
+                                <a href="Exp.html" class="px-3 py-1 text-lg border rounded-md ">Expérience</a>
+                            </li>
+                            <li class="m-4">
+                                <a href="acfri.html" class="px-3 py-1 text-lg border rounded-md ">Acfri</a>
+                            </li>
+                        </ul>
+                    </div>
+                <!-- fin bandeau avec bouton de redirection -->
+            </div>
+        <!-- fin bandeau haut de page -->
+
+        <!-- contenu de page -->
+        <div class="grid grid-cols-6 grid-rows-6 gap-3 mt-10 ">
+
+            <!-- articles -->
+                <div class="couleur-secondaire rounded-md shadow-lg p-5 card row-span-2 col-span-2 grid grid-rows-7 grid-cols-7">
+                    <h3 class="text-3xl font-bold text-center underline col-start-4 place-self-center">Infrastructure</h3>
+                    <img src="../static/img/infra.png" class="border row-start-2 col-start-3 col-span-3 row-span-3" >
+                    <div class="card-content row-start-6 col-span-7">
+                        <p class="text-lg text-center">Cette page est dédié à l'infrastructure entière de Acfri, logique et physique.</p>
+                    </div>
+                    <div class="col-start-7 row-start-7 place-self-end">
+                        <a href="acfri.html" class="px-3 py-1 text-lg rounded-md border ">Découvrir</a>
+                    </div>
+                </div>
+                <div class="couleur-secondaire rounded-md shadow-lg p-5 card col-span-2 row-span-2 grid grid-rows-7 grid-cols-7">
+                    <h3 class="text-3xl font-bold text-center underline col-start-2 col-span-5 place-self-center ">Site Internet</h3>
+                    <img src="../static/img/LOGO-ACFRI.png" class="border row-start-2 col-start-3 col-span-3 row-span-3 py-10" >
+                    <div class="card-content row-start-6 col-span-7">
+                        <p class="text-lg text-center">Cette page est dédié à l'étude du site internet entière de Acfri</p>
+                    </div>
+                    <div class="col-start-7 row-start-7 place-self-end">
+                        <a href="acfri.html" class="px-3 py-1 text-lg rounded-md border ">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="couleur-secondaire rounded-md shadow-lg p-5 card row-span-2 col-span-2 grid grid-rows-7 grid-cols-7">
+                    <h3 class="text-3xl font-bold text-center underline col-start-2 col-span-5 place-self-center ">Site Internet</h3>
+                    <img src="../static/img/LOGO-ACFRI.png" class="border row-start-2 col-start-3 col-span-3 row-span-3 py-10" >
+                    <div class="card-content row-start-6 col-span-7">
+                        <p class="text-lg text-center">Cette page est dédié à l'étude du site internet entière de Acfri</p>
+                    </div>
+                    <div class="col-start-7 row-start-7 place-self-end">
+                        <a href="acfri.html" class="px-3 py-1 text-lg rounded-md border ">Découvrir</a>
+                    </div>
+                </div>
+                <div class="couleur-secondaire rounded-md shadow-lg p-5 card row-span-2 col-span-2 grid grid-rows-7 grid-cols-7">
+                    <h3 class="text-3xl font-bold text-center underline col-start-4 place-self-center">Infrastructure</h3>
+                    <img src="../static/img/infra.png" class="border row-start-2 col-start-3 col-span-3 row-span-3" >
+                    <div class="card-content row-start-6 col-span-7">
+                        <p class="text-lg text-center">Cette page est dédié à l'infrastructure entière de Acfri, logique et physique.</p>
+                    </div>
+                    <div class="col-start-7 row-start-7 place-self-end">
+                        <a href="acfri.html" class="px-3 py-1 text-lg rounded-md border ">Découvrir</a>
+                    </div>
+                </div>
+                <div class="couleur-secondaire rounded-md shadow-lg p-5 card col-span-2 row-span-2 grid grid-rows-7 grid-cols-7">
+                    <h3 class="text-3xl font-bold text-center underline col-start-2 col-span-5 place-self-center ">Site Internet</h3>
+                    <img src="../static/img/LOGO-ACFRI.png" class="border row-start-2 col-start-3 col-span-3 row-span-3 py-10" >
+                    <div class="card-content row-start-6 col-span-7">
+                        <p class="text-lg text-center">Cette page est dédié à l'étude du site internet entière de Acfri</p>
+                    </div>
+                    <div class="col-start-7 row-start-7 place-self-end">
+                        <a href="acfri.html" class="px-3 py-1 text-lg rounded-md border ">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="couleur-secondaire rounded-md shadow-lg p-5 card row-span-2 col-span-2 grid grid-rows-7 grid-cols-7">
+                    <h3 class="text-3xl font-bold text-center underline col-start-2 col-span-5 place-self-center ">Site Internet</h3>
+                    <img src="../static/img/LOGO-ACFRI.png" class="border row-start-2 col-start-3 col-span-3 row-span-3 py-10" >
+                    <div class="card-content row-start-6 col-span-7">
+                        <p class="text-lg text-center">Cette page est dédié à l'étude du site internet entière de Acfri</p>
+                    </div>
+                    <div class="col-start-7 row-start-7 place-self-end">
+                        <a href="acfri.html" class="px-3 py-1 text-lg rounded-md border ">Découvrir</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
