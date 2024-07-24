@@ -6,23 +6,28 @@
     <title>Document</title>
     <link href="../assets/output.css" rel="stylesheet">
     <style>
-        .color-back {
+        .ct {
             color: #f3cb83;
-            background-color: #01261c;
+        }
+
+        .back {
+            background: radial-gradient(  #007c6a,#073e38, 70%,black ) no-repeat;
+            height: 100vh; /* Ensure the element has some height */
+            width: 100%; /* Ensure the element takes full width */
         }
 
         .border {
             border-color: #f3cb83;
             border-width: 2px;
-            background-color: #01261c;
+            background-color: #073e38;
         }
 
         .couleur-secondaire {
-            background-color: #006356;
+            background-color: #007c6a;
         }
 
         a:hover {
-            background-color: #006356;
+            background-color: #007c6a;
         }
 
         .card {
@@ -40,9 +45,10 @@
         .card:hover .card-content {
             max-height: 200px; /* Ajustez cette valeur selon la quantité de contenu */
         }
+
     </style>
 </head>
-<body class="color-back">
+<body class="ct back">
     <div class="container mx-auto p-5 font-baskerville ">
 
         <!-- bandeau haut de page -->  
