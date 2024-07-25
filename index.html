@@ -31,13 +31,24 @@
         }
         .pointer {
         animation: bounce 2s infinite;
+        }   
+
+        .carousel-background {
+            background-image: url('./static/img/fond-gris.png');
+            background-size: cover;
+            background-position: center;
+            width: 48vw; /* Half of the viewport width */
+            height: 48vw; /* Half of the viewport height */
+            border-radius: 50%; /* Make it round */
+            overflow: hidden; /* Ensure the content stays inside the round shape */
+            position: relative; /* Position it relatively to center it */
         }
 
         
     </style>
 </head>
 <body>
-    <div class="grid h-screen ">
+    <div class="h-screen grid">
         <div class="text-center py-4 degrade-blanc flex justify-center items-center">
             <h1 class="text-3xl font-bold text-center">Quentin Comby</h1> 
         </div>
@@ -69,14 +80,15 @@
             </div>
         </div>
     
-    
-        <div class="my-36 h-1/2 flex items-center justify-center ">
-            <div id="default-carousel" class="relative w-full max-w-4xl mx-auto" data-carousel="slide">
+    <!-- Fin contenu de page -->
+        <div class="flex justify-center items-center mt-36">
+        <div class="h-screen flex items-center justify-center carousel-background">
+            <div id="default-carousel" class="relative w-full max-w-4xl mx-auto" data-carousel="slide" >
                 <!-- Carousel wrapper -->
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="./static/img/image-infra.png" class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <img src="./static/img/image-salle-server-1.png" class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     </div>
                     <!-- Item 2 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
@@ -84,15 +96,15 @@
                     </div>
                     <!-- Item 3 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="./static/img/checklist.png" class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <img src="./static/img/image-infra.png" class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     </div>
                     <!-- Item 4 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="./static/img/checklist.png" class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <img src="./static/img/image-infra.png" class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     </div>
                     <!-- Item 5 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="./static/img/checklist.png" class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <img src="./static/img/image-infra.png" class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     </div>
                 </div>
                 <!-- Slider indicators -->
