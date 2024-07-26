@@ -6,28 +6,17 @@
     <title>Document</title>
     <link href="../assets/output.css" rel="stylesheet">
     <style>
-        .ct {
-            color: #f3cb83;
+        .degrade-blanc {
+            background: linear-gradient(80deg, #ffffff,rgb(231, 231, 231),70%,#ffffff );
+            height: 10rem; /* Ensure the element has some height */
         }
+    
 
-        .back {
-            background: radial-gradient(  #007c6a,#073e38, 70%,black ) no-repeat;
-            height: 100vh; /* Ensure the element has some height */
-            width: 100%; /* Ensure the element takes full width */
+        a {
+            background-color: #2e373a;
         }
-
-        .border {
-            border-color: #f3cb83;
-            border-width: 2px;
-            background-color: #073e38;
-        }
-
-        .couleur-secondaire {
-            background-color: #007c6a;
-        }
-
         a:hover {
-            background-color: #007c6a;
+            background-color: #000000;
         }
 
         .card {
@@ -45,70 +34,52 @@
         .card:hover .card-content {
             max-height: 200px; /* Ajustez cette valeur selon la quantité de contenu */
         }
-
     </style>
 </head>
 <body class="ct back">
-    <div class="container mx-auto p-5 font-baskerville ">
-
-        <!-- bandeau haut de page -->  
-            <div class="shadow-md couleur-secondaire rounded-md border">
-                <!-- bandeau haut de page -->
-                    <div class="header  text-center py-4 rounded-md">
-                        <h1 class="text-3xl font-bold">Mon Blog - Acfri</h1>    
-                    </div>
-                <!-- fin bandeau haut de page -->
-            
-                <!-- bandeau avec bouton de redirection -->
-                <div class="container mx-auto p-4 ">
-                    <div class="grid grid-cols-9 gap-4 items-center ">
-                        <!-- Spacer to center the first 4 buttons -->
-                        <div></div>
-                        <!-- First 4 Buttons centered -->
-                        <div class="col-start-1 flex justify-start ">
-                            <a href="Exp.html" class="px-3 text-lg border rounded-md ">Retour</a>
-                        </div>
-                        <div class="grid w-full justify-self-center col-start-4"><a href="../index.html" class="px-3 text-lg border text-center rounded-md "> Accueil</a></div>
-                        <div class="grid w-full justify-self-center "><a href="about.html" class="px-3 text-lg border text-center rounded-md ">Mon Profil</a></div>
-                        <div class="grid w-full justify-self-center "><a href="Exp.html" class="px-3 text-lg border text-center rounded-md "> Expérience</a></div>
-                        <!-- Button 'Retour' on the right -->
-                    </div>
+    <div class="grid">
+        <div class="text-center py-4 degrade-blanc flex justify-center items-center">
+            <h1 class="text-3xl font-bold text-center">Quentin Comby</h1> 
+        </div>
+                
+        <!-- Bandeau avec boutons de redirection -->
+        <div class="relative mt-32 text-white mb-4">
+            <div class="flex justify-center">
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="../index.html" class="p-3 text-lg border text-center shadow-xl w-32">Accueil</a>
+                    <a href="./about.html" class="p-3 text-lg border text-center shadow-xl w-32">Mon Profil</a>
+                    <a href="./Exp.html" class="p-3 text-lg border text-center shadow-xl w-32">Expérience</a>
                 </div>
-                <!-- fin bandeau avec bouton de redirection -->
-            </div>
-        <!-- fin bandeau haut de page -->
-
-        <!-- contenu de page -->
-        
-        <!-- introduction de page -->
-        <div class="grid justify-items-center ">
-            <div class="content couleur-secondaire bg-white p-5 mt-5 shadow-md rounded-md w-3/4 border">
-                <h2 class="text-2xl font-bold text-center">Pour valider ma deuxième année en bachelor à Ynov informatique, j'ai dû effectuer un stage.</h2>
-                <p class="leading-relaxed text-2xl text-center my-3">J'ai fait ce stage chez Acfri, un fabricant français de cellule de refroidissement et de surgélation rapide</p>
             </div>
         </div>
-        <!-- fin introduction de page -->
-        <div class="grid grid-cols-5 gap-3 mt-10 ">
-
-            <!-- articles -->
-
-            <div class="couleur-secondaire rounded-md shadow-lg p-5 card grid grid-rows-7 grid-cols-7 col-start-2 cursor-pointer border" onclick="location.href='missions-acfri.html'">
-                <h3 class="text-3xl font-bold text-center underline col-start-2 col-span-5 place-self-center ">Missions</h3>
-                <img src="../static/img/checklist.png" class="border p-2 rounded-md row-start-3 col-start-3 row-span-3 col-span-3">
-                <div class="col-start-7 row-start-7 place-self-end">
-                    <a href="missions-acfri.html" class="px-3 py-1 text-lg rounded-md border ">Découvrir</a>
-                </div>
+        
+        <div class="grid justify-items-center mb-32">
+            <a href="./Exp.html" class="p-3 text-lg border text-center shadow-xl w-32 rounded-full bg-gray-100 flex justify-center">
+                <img src="../static/img/retour.png" class="size-8">
+            </a>
+        </div>
+        <!-- Fin bandeau avec boutons de redirection -->
+    </div>
+        
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 mt-10 mb-20">
+        <!-- Première carte -->
+        <div class="couleur-secondaire rounded-md shadow-lg p-5 card grid grid-rows-6 grid-cols-7 cursor-pointer border col-start-2" onclick="location.href='missions-acfri.html'" style="background-image: url('../static/img/find-noir.png');">
+            <h3 class="text-2xl sm:text-3xl font-bold text-center underline col-start-2 col-span-5 place-self-center text-white">Missions</h3>
+            <img src="../static/img/checklist.png" class="border p-2 rounded-md row-start-3 col-start-3 row-span-3 col-span-3">
+            <div class="col-start-7 row-start-6 place-self-end">
+                <a href="missions-acfri.html" class="px-3 py-1 text-sm sm:text-lg text-white bg-black bg-opacity-50 rounded">Découvrir</a>
             </div>
-
-            <div class="couleur-secondaire rounded-md shadow-lg p-5 card grid grid-rows-7 grid-cols-7 col-start-4 cursor-pointer border" onclick="location.href='entreprise-acfri.html'">
-                <h3 class="text-3xl font-bold text-center underline col-start-2 col-span-5 place-self-center ">Entreprise</h3>
-                
-                <img src="../static/img/chronologique.png" class="border p-2 rounded-md row-start-3 col-start-3 row-span-3 col-span-3">
-                <div class="col-start-7 row-start-7 place-self-end">
-                    <a href="entreprise-acfri.html" class="px-3 py-1 text-lg rounded-md border ">Découvrir</a>
-                </div>
+        </div>
+    
+        <!-- Deuxième carte -->
+        <div class="couleur-secondaire rounded-md shadow-lg p-5 card grid grid-rows-6 grid-cols-7 cursor-pointer border col-start-4" onclick="location.href='entreprise-acfri.html'" style="background-image: url('../static/img/find-noir.png');">
+            <h3 class="text-2xl sm:text-3xl font-bold text-center underline col-start-2 col-span-5 place-self-center text-white">Entreprise</h3>
+            <img src="../static/img/chronologique.png" class="border p-2 rounded-md row-start-3 col-start-3 row-span-3 col-span-3">
+            <div class="col-start-7 row-start-6 place-self-end">
+                <a href="entreprise-acfri.html" class="px-3 py-1 text-sm sm:text-lg text-white bg-black bg-opacity-50 rounded">Découvrir</a>
             </div>
         </div>
     </div>
+    
 </body>
 </html>
