@@ -53,17 +53,18 @@
         <!-- Fin bandeau avec boutons de redirection -->
     </div>
 
-    <div class="grid grid-cols-2  mt-20">
-        <div>
-            <h2 class="text-6xl ml-10">À propos</h2>
-            <p class="leading-relaxed text-xl text-center  m-5">
+    <div class="flex flex-col md:flex-row mt-20 mb-20">
+        
+        <div class="order-1 md:order-1 md:w-1/2 self-center">
+            <h2 class="text-4xl md:text-6xl ml-5 md:ml-10 mb-20">À propos</h2>
+            <p class="leading-relaxed text-base md:text-xl text-center m-3 md:m-5">
                 Étudiant à Ynov Campus, je suis spécialisé en administration système et réseau.
                 Passionné par la technologie, je suis motivé à apprendre,
                 En dehors de mes études, je pratique le volleyball en compétition, 
-                je suis friant de challenge tant professionelle que sportif.
+                je suis friant de challenge tant professionnelle que sportive.
             </p>
-            <p class="leading-relaxed text-xl text-center m-5">
-                j'ai commencé à me passionner pour les jeux vidéo à l'adolescence, 
+            <p class="leading-relaxed text-base md:text-xl text-center m-3 md:m-5">
+                J'ai commencé à me passionner pour les jeux vidéo à l'adolescence, 
                 ce qui m'a rapidement permis de comprendre que je voulais faire carrière dans l'informatique.
                 Pour concrétiser cette ambition, j'ai d'abord suivi la spécialité Numérique et Sciences Informatiques au lycée. 
                 Par la suite, j'ai intégré Ynov Bordeaux pour poursuivre des études en informatique.
@@ -71,20 +72,24 @@
                 notamment dans les domaines des réseaux et des systèmes informatiques.
             </p>
         </div>
-        <div class="flex justify-center">
-            <img src="../static/img/image-salle-server-2.png" class="h-2/3 mx-2">
+        <div class="order-2 md:order-2 md:w-1/2 flex justify-center md:justify-center items-center">
+            <img src="../static/img/image-salle-server-2.png" class="w-full md:w-2/3 mx-2">
         </div>
     </div>
+    
+    
     <div class="flex justify-center">
 
     <hr class="border-t-2 border-black  w-1/2">
 
     </div>
     <div class="grid mt-20">
-        
-        <h2 class="text-6xl mb-10 text-center">Mon CV</h2>
-        <embed src="../static/img/quentin-new-cv (1).pdf" type="application/pdf" class="w-2/3 h-screen justify-self-center"/>
+        <h2 class="text-4xl md:text-6xl mb-10 text-center">Mon CV</h2>
+        <div class="flex justify-center">
+            <embed src="../static/img/quentin-new-cv (1).pdf" type="application/pdf" class="w-full md:w-2/3 h-96 md:h-[80vh] justify-self-center" />
+        </div>
     </div>
+    
 
 </body>
 </html>
